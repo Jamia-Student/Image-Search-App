@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div id = "main-container" class = "min-h-screen flex flex-col items-center p-5 transition-colors duration-500">
+            <label id = "label" for = "input"> Image Search App</label>
+            <button id = "toggle" class = "self-end rounded-sm bg-amber-300">Toggle Theme</button>
+            <br>
+            <div>
+                <input type = "text" id = "input" class = "border border-black rounded p-2 h-[5vh]" placeholder = "Search for images...">
+                <button id = "btn" class = "bg-green-500 rounded-sm w-[5vw] h-[5vh]">Search</button>
+            </div>
+            <div id="spinner" class="hidden flex justify-center items-center h-32">
+                <div class="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+            </div>
+            <div id = "image-container" class = "grid sm:grid-cols-1 lg:grid-cols-3 gap-3 p-3">
+
+            </div>
+        </div>
+        <script src = "javascript.js"></script>
+    </body>
+</html>
